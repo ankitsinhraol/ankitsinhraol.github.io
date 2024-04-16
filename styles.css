@@ -208,7 +208,7 @@ h2::after {
 
 .card,.project {
     width: calc(50% - 30px);
-    background-color: #ggg; /* Dark gray */
+    background-color:#gggggg ;
     padding: 30px;
     margin-bottom: 60px;
     border-radius: 20px;
