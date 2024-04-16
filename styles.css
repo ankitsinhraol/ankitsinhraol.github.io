@@ -1,0 +1,263 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: rgba(255, 255, 255, 0.90);
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff; /* Darker gray */
+
+  color: #0500FD;
+ 
+  position: fixed; /* Fix the header position */
+  width: 100%; /* Make the header span the entire width */
+  top: 0; /* Position the header at the top of the viewport */
+  z-index: 999;
+     /* Gray */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu li a {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  color: rgba(5, 0, 253, 0.62);
+
+}
+
+main {
+ margin-top: 80px;
+}
+
+.page {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+    width: 90%;
+   
+    margin: 0 auto;
+    
+}
+
+
+.container_abt {
+    width: 90%;
+   
+    margin: 0 auto;
+   display: flex;
+  align-items: center;
+    
+}
+
+
+
+h1 {
+    color: rgba(5, 0, 253, 0.62); /* Light blue */
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.subtitle {
+    color: #bbb; /* Light gray */
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #5063C8;
+  overflow: hidden;
+  margin-right: 80px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+   font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contact-info li:hover {
+    opacity: 1;
+}
+
+.about,  .projects, .experience, .education {
+    padding: 50px 0;
+}
+
+.skill {
+    color: #e43e00;
+    text-align: center; /* Center the content horizontally */
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill li {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+.skill img {
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing between images */
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    color: rgba(5, 0, 253, 0.62); /* Light blue */
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: rgba(5, 0, 253, 0.62); /* Light blue */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-container,.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+.card,.project {
+    width: calc(50% - 30px);
+    background-color: #ggg; /* Dark gray */
+    padding: 30px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+.detCard{
+    padding: 10px;
+    background-color: #EAE9FF; /* Dark gray */
+    align-content: center;
+    margin-bottom: 50px;
+    align-self: center;
+    border-radius: 20px;
+    
+}
+
+.detCard h3{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+    align-content: center;
+    color: rgba(5, 0, 253, 0.62); /* Light gray */
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.card:hover,.project:hover {
+/*    transform: translateY(-10px);*/
+}
+
+.card h3,.project h3 {
+    color: rgba(5, 0, 253, 0.62); /* Light blue */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.card p,.project p {
+    color: #ddd; /* Light gray */
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333; /* Dark gray */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
