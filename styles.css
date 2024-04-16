@@ -208,7 +208,7 @@ h2::after {
 
 .card,.project {
     width: calc(50% - 30px);
-    background-color:#gggggg ;
+    background-color: #ggg; /* Dark gray */
     padding: 30px;
     margin-bottom: 60px;
     border-radius: 20px;
@@ -239,6 +239,36 @@ h2::after {
     line-height: 1.6;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-link {
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.icon-link img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    transition: filter 0.3s; /* Add transition effect for hover */
+}
+
+.icon-link:hover img {
+    filter: brightness(70%);
+
+    color: red; /* Change brightness on hover */
+}
+
+.icon {
+    fill: black; /* Default color of the SVG icon */
+}
+
+.icon:hover {
+    fill: rgba(5, 0, 253, 0.62); /* Color of the SVG icon on hover */
+}
 .card:hover,.project:hover {
 /*    transform: translateY(-10px);*/
 }
