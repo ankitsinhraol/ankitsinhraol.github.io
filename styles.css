@@ -265,8 +265,11 @@ h2::after {
 .icon {
     fill: black; /* Default color of the SVG icon */
 }
+.icon_dem{
+    fill: #6c757d;
+}
 
-.icon:hover {
+.icon:hover ,.icon_dem:hover{
     fill: rgba(5, 0, 253, 0.62); /* Color of the SVG icon on hover */
 }
 .card:hover,.project:hover {
@@ -280,8 +283,11 @@ h2::after {
 }
 
 .card p,.project p {
-    color: #ddd; /* Light gray */
-    font-size: 1.3em;
+    font-family: "Roboto Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+    color: #6c757d; /* Light gray */
+    font-size: 0.9em;
     line-height: 1.6;
 }
 
